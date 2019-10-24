@@ -211,5 +211,11 @@ img{
   margin-bottom: 10px;
   position: relative;
   color: #fff;
+  display: inline-block;
 }
 
+.player-name:focus{
+  border-bottom: 3px solid #2998ff;
+  transform: translateX(-10px) scale(1.1);
+  font-size: 19.8px
+}

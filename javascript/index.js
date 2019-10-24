@@ -2,16 +2,6 @@
  * INITIALIZING FUNCTION
  */
 const init = ()=> {
-  document.querySelector(".player-1-name").addEventListener("keypress", e => {
-    if (e.which === 13) {
-      playerOne();
-    }
-  });
-  document.querySelector(".player-2-name").addEventListener("keypress", e => {
-    if (e.which === 13) {
-      playerTwo();
-    }
-  });
   /**
    * !Selecting Div of Player 1&2
    **/
@@ -29,6 +19,18 @@ const init = ()=> {
   currentPos1 = 1;
   currentPos2 = 1;
   activePlayer = 0;
+  //! Extracting Names From input
+  document.querySelector(".player-1-name").addEventListener("keypress", e => {
+    if (e.which === 13) {
+      playerOne();
+    }
+  });
+  document.querySelector(".player-2-name").addEventListener("keypress", e => {
+    if (e.which === 13) {
+      playerTwo();
+    }
+  });
+
   /**
    * todo (Calling the functions on button clicks)
    **/
